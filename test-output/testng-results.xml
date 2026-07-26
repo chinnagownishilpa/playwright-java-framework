@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-26T13:43:21 IST" name="Suite" finished-at="2026-07-26T13:43:32 IST" duration-ms="10775">
+    <groups>
+    </groups>
+    <test started-at="2026-07-26T13:43:21 IST" name="Test" finished-at="2026-07-26T13:43:32 IST" duration-ms="10775">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="start()[pri:0, instance:tests.LoginTest@6aeb35e6]" started-at="2026-07-26T13:43:21 IST" name="start" finished-at="2026-07-26T13:43:30 IST" duration-ms="8322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="verifyLoginPageTitle()[pri:0, instance:tests.LoginTest@6aeb35e6]" started-at="2026-07-26T13:43:30 IST" name="verifyLoginPageTitle" finished-at="2026-07-26T13:43:30 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method is-config="true" signature="end()[pri:0, instance:tests.LoginTest@6aeb35e6]" started-at="2026-07-26T13:43:30 IST" name="end" finished-at="2026-07-26T13:43:30 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.E2ETest">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:tests.E2ETest@3590fc5b]" started-at="2026-07-26T13:43:30 IST" name="setupTest" finished-at="2026-07-26T13:43:32 IST" duration-ms="1292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyUserCanAddProducts()[pri:0, instance:tests.E2ETest@3590fc5b]" started-at="2026-07-26T13:43:32 IST" name="verifyUserCanAddProducts" finished-at="2026-07-26T13:43:32 IST" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddProducts -->
+      </class> <!-- tests.E2ETest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
