@@ -8,7 +8,9 @@ import org.testng.annotations.Test;
 import com.framework.base.BaseTest;
 import com.framework.utilities.ConfigReader;
 
-public class LoginTest extends BaseTest{
+import retry.RetryAnalyzer;
+
+public class LoginTest extends BaseTest {
 	
 	@BeforeMethod
 	public void start() {
@@ -20,7 +22,7 @@ public class LoginTest extends BaseTest{
 		tearDown();
 	}
 	
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void verifyLoginPageTitle() {
 		page.navigate(ConfigReader.getProperty("baseUrl"));
         String actualTitle = page.title();

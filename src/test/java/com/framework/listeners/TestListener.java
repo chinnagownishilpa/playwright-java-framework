@@ -5,8 +5,10 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.framework.base.BaseTest;
 import com.framework.reports.ExtentManager;
 import com.framework.reports.ExtentTestManager;
+import com.framework.utilities.ScreenshotUtil;
 
 public class TestListener implements ITestListener {
 
@@ -39,8 +41,24 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
 
-        ExtentTestManager.getTest()
-                .fail(result.getThrowable());
+        try {
+
+            String path=
+                    ScreenshotUtil.capture(
+                            BaseTest.getPage(),
+                            result.getMethod().getMethodName());
+
+            ExtentTestManager.getTest()
+                    .fail(result.getThrowable())
+                    .addScreenCaptureFromPath(path);
+
+        }
+
+        catch(Exception e){
+
+            e.printStackTrace();
+
+        }
 
     }
 
