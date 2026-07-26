@@ -2,22 +2,20 @@
 
 <suite name="Playwright Automation Suite">
 
-    <listeners>
+	<listeners>
 
-        <listener class-name="listeners.TestListener"/>
+		<listener class-name="com.framework.listeners.TestListener" />
+	</listeners>
 
-    </listeners>
+	<test name="Regression">
 
-    <test name="Regression">
+		<classes>
 
-        <classes>
+			<class name="com.framework.tests.LoginTest" />
+			<class name="com.framework.tests.E2ETest" />
 
-            <class name="tests.LoginTest"/>
+		</classes>
 
-            <class name="tests.E2ETest"/>
-
-        </classes>
-
-    </test>
+	</test>
 
 </suite>

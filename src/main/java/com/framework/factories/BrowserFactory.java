@@ -1,10 +1,9 @@
-package factories;
+package com.framework.factories;
 
+import com.framework.utilities.ConfigReader;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Playwright;
-
-import utilities.ConfigReader;
 
 public class BrowserFactory {
 	

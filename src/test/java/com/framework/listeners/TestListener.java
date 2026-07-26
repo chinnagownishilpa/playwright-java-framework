@@ -1,13 +1,12 @@
-package listeners;
+package com.framework.listeners;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentTest;
-
-import reports.ExtentManager;
-import reports.ExtentTestManager;
+import com.framework.reports.ExtentManager;
+import com.framework.reports.ExtentTestManager;
 
 public class TestListener implements ITestListener {
 

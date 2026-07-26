@@ -1,14 +1,14 @@
-package tests;
+package com.framework.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import base.BaseTest;
-import pages.CartPage;
-import pages.HomePage;
-import pages.LoginPage;
-import utilities.ConfigReader;
+import com.framework.base.BaseTest;
+import com.framework.pages.CartPage;
+import com.framework.pages.HomePage;
+import com.framework.pages.LoginPage;
+import com.framework.utilities.ConfigReader;
 
 public class E2ETest extends BaseTest {
 

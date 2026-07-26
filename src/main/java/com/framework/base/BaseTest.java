@@ -1,8 +1,7 @@
-package base;
+package com.framework.base;
 
+import com.framework.factories.BrowserFactory;
 import com.microsoft.playwright.*;
-
-import factories.BrowserFactory;
 
 public class BaseTest {
 
